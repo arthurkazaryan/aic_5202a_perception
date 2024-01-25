@@ -11,8 +11,7 @@ services:
       - "8002:8002"
     volumes:
       - ./models:/models
-    command: sh -c "nvidia-smi &&
-                    tritonserver --model-repository=/models"
+    command: sh -c "nvidia-smi && tritonserver --model-repository=/models"
     deploy:
       resources:
         reservations:
