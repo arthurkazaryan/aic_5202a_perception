@@ -27,23 +27,23 @@ The dataset is a custom one, and it was composed of images of a dashcam of a car
 </div>
 
 Dataset was uploaded to Roboflow and 20 samples from each RGB and IR dataset were annotated manually. Only noise augmentation was implemented. 
-
+<br>
 When exporting, a ratio of 80/20 of train/val was chosen.
-
+<br>
 
 How to Run the project:
-Create a folder in app/data_rgb
-Create a folder in app/data_ir
-Add the images/frames for which the detection needs to take place.
-Input images not available in the repo. Please add the input images.
-Change the directory in main.py accordingly
+<br>Create a folder in app/data_rgb
+<br>Create a folder in app/data_ir
+<br>Add the images/frames for which the detection needs to take place.
+<br>Input images not available in the repo. Please add the input images.
+<br>Change the directory in main.py accordingly
 
 Then:
-cd aic_5202a_perception/app
-`pip install -r requirements.txt`
-Open docker desktop
-`docker-compose up`
-`python main.py`
-
-A window will pop-up with the image detection.
-metrics can be verified in localhost:8002/metrics
+<br>cd aic_5202a_perception/app
+<br>`pip install -r requirements.txt`
+<br>Open docker desktop
+<br>`docker-compose up`
+<br>`python main.py`
+<br>
+<br>A window will pop-up with the image detection.
+<br>Metrics can be verified in localhost:8002/metrics
